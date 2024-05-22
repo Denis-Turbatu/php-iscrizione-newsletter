@@ -14,12 +14,14 @@ $user_email = $_POST["email"];
 </head>
 
 <body>
-    <form action="index.php" method="POST">
-        <input type="email" name="email" id="email">
-        <button type="submit">Invia</button>
-    </form>
+    <div class="container">
+        <?php include "./functions.php"; ?>
 
-    <?php include "./functions.php"; ?>
+        <form action="index.php" method="POST">
+            <input type="email" name="email" id="email">
+            <button type="submit">Invia</button>
+        </form>
+    </div>
 
 </body>
 
